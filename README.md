@@ -15,6 +15,16 @@ This project is executed in five main phases:
 * **Language:** Python 3
 * **Libraries:** Pandas, NumPy, Scikit-Learn, Imbalanced-Learn (SMOTE), XGBoost, Matplotlib, Seaborn
 
+## Project Structure
+Customer-Churn-Project/
+│
+├── churn_model.ipynb   ← Training + EDA
+├── churn_model.pkl     ← Saved model
+├── app.py              ← Streamlit app
+├── WA_Fn-UseC_-Telco-Customer-Churn.csv   ← dataset
+├── requirements.txt
+
+
 ## How to Run
 1. Ensure the dataset `WA_Fn-UseC_-Telco-Customer-Churn.csv` is present in the root directory.
 2. Run `python telco_churn_analysis.py` to begin executing the pipeline.
