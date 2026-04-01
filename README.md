@@ -29,12 +29,21 @@ Customer-Churn-Project/
 │   └── config.toml        ← Streamlit dark-mode theme configuration
 ├── customer_churn_model.pkl ← Saved XGBoost predictive model
 ├── encoders.pkl           ← Saved label encoders for feature mapping
+├── requirements.txt       ← Streamlit Cloud dependencies
 ├── README.md              ← Project documentation
 
-## How to Run
+## How to Run Locally
 
-1. Ensure the model files (`.pkl`) and images are present in the project folder.
-2. Run the application locally using Streamlit:
+1. Ensure the model files (`.pkl`) and background image are present in the project folder.
+2. Install the required Python dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Run the application locally using Streamlit:
    ```bash
    streamlit run app.py
    ```
+
+## Cloud Deployment (Streamlit Community Cloud)
+This repository is pre-configured for deployment on **Streamlit Community Cloud**. 
+The `requirements.txt` file contains all necessary dependencies (`pandas`, `scikit-learn`, `xgboost`, `imbalanced-learn`) required for the cloud environment to properly load the machine learning models and run the application.
